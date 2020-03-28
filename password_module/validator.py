@@ -7,10 +7,10 @@ class Validator:
     Determine if password have correct representation (symbols)
     and right image in case of image processing.
   """
-  def is_password_valid( self, password ):
+  def is_password_valid( self, password: str ) -> bool:
     if len( password ) < 8 or len( password ) >= 20:
       return False
     return True
 
-  def is_user_valid( self, user ):
+  def is_user_valid( self, user: str ) -> bool:
     return False
